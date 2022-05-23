@@ -1,2 +1,120 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap");
+@import url('http://fonts.cdnfonts.com/css/cocogoose');
 
+/* The Mobile style */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+/* Header styling */
+
+.header-image {
+  background-color: rgba(229, 229, 229, 0.9);
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  left: 0;
+  right: 0;
+  background-image: url(./images/Mobile/bg_mobile.png);
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.logo {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  margin-right: 20px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+  background-color: #272a31;
+}
+
+.nav-menu {
+  display: none;
+  justify-content: space-between;
+}
+
+.ask-quote {
+  display: none;
+}
+
+/* Headline */
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-top: 40px;
+}
+
+h1 {
+  font-family: 'COCOGOOSE', sans-serif;
+  font-size: 2rem;
+  color: rgba(236, 82, 66, 1);
+  align-self: center;
+  margin-left: 15px;
+}
+
+.hammer-vector {
+  background-image: url(images/Mobile/vector-hammer-png.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 167px;
+  height: 100px;
+  left: 306px;
+  top: 190px;
+  opacity: 0.75;
+}
+
+.headline-paragraph-container {
+  display: flex;
+  border: 2px solid white;
+  margin-top: 15px;
+  align-self: center;
+  padding: 10px;
+  width: 384px;
+  background-color: rgb(229, 229, 229);
+}
+
+.headline-paragraph-container p {
+  font-family: "Poppins", sans-serif;
+  line-height: 25px;
+  color: #272a31;
+}
+
+.headline-container h3 {
+  font-family: 'COCOGOOSE', sans-serif;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  align-self: center;
+  font-size: 15px;
+  color: #272a31;
+}
