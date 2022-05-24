@@ -15,7 +15,7 @@ body {
   height: 100vh;
 }
 
-/* Header styling */
+/* Header Section styling */
 
 .header-image {
   background-color: rgba(229, 229, 229, 0.9);
@@ -66,19 +66,27 @@ body {
   display: none;
 }
 
-/* Headline */
+/* Headline Section styling */
 
 .headline-container {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  margin-top: 40px;
+  margin-top: 122px;
 }
 
-h1 {
-  font-family: 'COCOGOOSE', sans-serif;
+.headline-container h1 {
+  background-image: url(./images/Mobile/orange-background.png);
+  font-family: 'cocogoose', sans-serif;
   font-size: 2rem;
-  color: rgba(236, 82, 66, 1);
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: 20% 20%;
+  background-size: cover;
+  color: transparent;
+  max-width: 900px;
   align-self: center;
   margin-left: 15px;
 }
@@ -111,10 +119,108 @@ h1 {
 }
 
 .headline-container h3 {
-  font-family: 'COCOGOOSE', sans-serif;
+  font-family: 'cocogose', sans-serif;
   margin-top: 25px;
   margin-bottom: 40px;
   align-self: center;
-  font-size: 15px;
+  font-size: 18px;
   color: #272a31;
+}
+
+/* Main section Styling */
+
+.solution-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-self: center;
+  align-items: center;
+  background-image: url(./images/Mobile/Main-section-Bg.png);
+  background-repeat: no-repeat;
+  gap: 30px;
+}
+
+.section-title {
+  display: flex;
+  flex: 1;
+  color: white;
+  align-self: center;
+  font-family: 'COCOGOOSE', sans-serif;
+  margin-top: 15px;
+}
+
+.section-title-underline-bar {
+  width: 46px;
+  height: 2px;
+  align-self: center;
+  background-color: rgba(236, 82, 66, 1);
+  margin-top: -16px;
+}
+
+.solution-stack {
+  display: flex;
+  align-content: space-between;
+  align-self: center;
+  height: 100px;
+  width: 95%;
+  margin-right: 0;
+  margin-left: 0;
+  background-color: rgba(60, 63, 69, 0.8);
+}
+
+.stack-icon-1,
+.stack-icon-2,
+.stack-icon-3,
+.stack-icon-4 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.stack-title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-family: 'cocogose', sans-serif;
+  color: rgba(241, 166, 24, 1);
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 32px;
+}
+
+.stack-intro-text {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  margin-right: 37px;
+}
+
+.stack-intro-text p {
+  color: white;
+  font-family: 'cocogose', sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: lighter;
+}
+
+.button-ask-quote {
+  display: flex;
+  border: 1px solid;
+  flex-direction: column;
+  height: 50px;
+  width: 150px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  color: #1b1a19;
+  background-color: rgba(236, 82, 66, 1);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  transition: all 200ms ease-in-out;
 }
