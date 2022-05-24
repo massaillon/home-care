@@ -18,7 +18,7 @@ body {
 /* Header Section styling */
 
 .header-image {
-  background-color: rgba(229, 229, 229, 0.9);
+  background-color: rgba(222, 222, 222, 0.9);
 }
 
 .home-header {
@@ -37,6 +37,7 @@ body {
   justify-content: space-between;
   margin-left: 20px;
   margin-top: 10px;
+  position: fixed;
 }
 
 .logo {
@@ -129,6 +130,8 @@ body {
 
 /* Main section Styling */
 
+/* Our Solutions Styling */
+
 .solution-container {
   display: flex;
   flex-direction: column;
@@ -145,8 +148,9 @@ body {
   flex: 1;
   color: white;
   align-self: center;
-  font-family: 'COCOGOOSE', sans-serif;
+  font-family: 'cocogose', sans-serif;
   margin-top: 15px;
+  font-size: 20px;
 }
 
 .section-title-underline-bar {
@@ -206,15 +210,15 @@ body {
 
 .button-ask-quote {
   display: flex;
-  border: 1px solid;
+  border: 1px solid rgba(236, 82, 66);
   flex-direction: column;
   height: 50px;
   width: 150px;
-  border-radius: 16px;
+  border-radius: 4px;
   justify-content: center;
   align-items: center;
   align-self: center;
-  color: #1b1a19;
+  color: white;
   background-color: rgba(236, 82, 66, 1);
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -223,4 +227,122 @@ body {
   line-height: 24px;
   margin-bottom: 24px;
   transition: all 200ms ease-in-out;
+}
+
+/* Feature section styling */
+
+.featured-speaker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.featured-speaker-container .section-title {
+  display: flex;
+  flex: 1;
+  color: #272a31;
+  align-self: center;
+  font-family: 'cocogose', sans-serif;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.featured-speaker-container .section-title-underline-bar {
+  width: 46px;
+  height: 2px;
+  align-self: center;
+  background-color: rgba(236, 82, 66, 1);
+  margin-top: 10px;
+}
+
+.featured-speaker-stack-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 70px;
+  align-self: center;
+}
+
+.featured-speaker-stack {
+  display: flex;
+  width: 680px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  margin-left: 132px;
+  margin-top: -31px;
+}
+
+.featured-speaker-stack-picture-container {
+  display: flex;
+  align-items: center;
+}
+
+.speaker-stack-picture {
+  display: flex;
+  margin-top: 20px;
+  z-index: 9;
+}
+
+/* To Make the CHEST background style */
+
+.speaker-stack-picture-backdrop {
+  background: repeating-conic-gradient(#fff 0deg 90deg, #000 0 180deg) 0 0/20% 20%;
+  margin: -40px;
+  padding: 10px;
+  height: min(20vw, 50px);
+  width: min(20vw, 73px);
+  z-index: 4;
+  transition: all 0.3s ease-in-out;
+  margin-left: -33px;
+  margin-top: -22px;
+  margin-right: -57px;
+}
+
+.featured-speaker-stack-picture-container img {
+  z-index: 9;
+}
+
+.featured-speaker-stack-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  font-family: 'cocogose', sans-serif;
+  width: 300px;
+}
+
+.featured-speaker-stack-text-title {
+  font-size: 22px;
+  color: #272a31;
+}
+
+.featured-speaker-introduction {
+  margin-top: 5px;
+  color: rgba(236, 82, 66, 1);
+  font-size: 15px;
+}
+
+.featured-speaker-stack-text-container .section-title-underline-bar {
+  width: 46px;
+  height: 2px;
+  align-self: baseline;
+  background-color: grey;
+}
+
+.featured-speaker-stack-description {
+  font-size: 15px;
+  color: grey;
+  padding-right: 76px;
+  margin-right: 15px;
+  margin-top: 12px;
+}
+
+.featured-speaker-stack-description p {
+  line-height: 18px;
+  font-weight: lighter;
 }
