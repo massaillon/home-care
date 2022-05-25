@@ -18,7 +18,8 @@ body {
 /* Header Section styling */
 
 .header-image {
-  background-color: rgba(222, 222, 222, 0.9);
+  background-color: #f9f9f9;
+  opacity: 0.9;
 }
 
 .home-header {
@@ -67,6 +68,75 @@ body {
   display: none;
 }
 
+/* Vector background */
+
+.chest-bg-vector {
+  background-image: url(./images/Mobile/Chest-bg-vector.png);
+  width: 92.67px;
+  transform: rotate(86.86deg);
+  padding-top: 111px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 220px;
+  top: 8px;
+}
+
+.chest-bg-vector:hover {
+  scale: 1.2;
+}
+
+.C-bg-vector {
+  background-image: url(./images/Mobile/C-bg-vector.png);
+  width: 92.67px;
+  transform: rotate(3.86deg);
+  padding-top: 111px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 51px;
+  top: 51px;
+}
+
+.C-bg-vector:hover {
+  scale: 1.2;
+}
+
+.Cross-bg-vector {
+  background-image: url(./images/Mobile/cross-bg-vector.png);
+  width: 92.67px;
+  transform: rotate(86.86deg);
+  padding-top: 111px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 302px;
+  top: 93px;
+}
+
+.Cross-bg-vector:hover {
+  scale: 1.2;
+}
+
+.cercle-bg-vector {
+  background-image: url(./images/Mobile/Cercle-bg-vector.png);
+  width: 92.67px;
+  transform: rotate(86.86deg);
+  padding-top: 111px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 302px;
+  top: 310px;
+}
+
+.dollar-bg-vector {
+  background-image: url(./images/Mobile/dollar-bg-vector.png);
+  width: 92.67px;
+  transform: rotate(189.86deg);
+  padding-top: 111px;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 302px;
+  top: 480px;
+}
+
 /* Headline Section styling */
 
 .headline-container {
@@ -74,6 +144,7 @@ body {
   flex-direction: column;
   align-content: space-between;
   margin-top: 122px;
+  margin-bottom: 90px;
 }
 
 .headline-container h1 {
@@ -111,6 +182,7 @@ body {
   padding: 10px;
   width: 384px;
   background-color: rgb(229, 229, 229);
+  z-index: 9;
 }
 
 .headline-paragraph-container p {
