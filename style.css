@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   left: 0;
   right: 0;
-  background-image: url(./images/Mobile/bg_mobile.png);
+  background-image: url(./images/Mobile/Header-bg-home.jpg);
   background-repeat: no-repeat;
   z-index: 9;
 }
@@ -106,7 +106,7 @@ body {
 .headline-paragraph-container {
   display: flex;
   border: 2px solid white;
-  margin-top: 15px;
+  margin-top: 12px;
   align-self: center;
   padding: 10px;
   width: 384px;
@@ -306,6 +306,7 @@ body {
 
 .featured-speaker-stack-picture-container img {
   z-index: 9;
+  object-fit: contain;
 }
 
 .featured-speaker-stack-text-container {
@@ -345,4 +346,111 @@ body {
 .featured-speaker-stack-description p {
   line-height: 18px;
   font-weight: lighter;
+}
+
+/* Partner Section Styling */
+
+.partner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(60, 63, 69, 1);
+  font-family: 'cocogose', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.partner-container .section-title {
+  color: white;
+}
+
+.partner-container .section-title-underline-bar {
+  width: 46px;
+  height: 2px;
+  align-self: center;
+  background-color: rgba(236, 82, 66, 1);
+  margin-top: 10px;
+}
+
+.partner-block-1 {
+  display: flex;
+  width: 100%;
+  height: 56px;
+  margin-top: 12px;
+  margin-left: 30px;
+  align-self: center;
+}
+
+.partner-block-1 .partner-client-1 {
+  flex: 1;
+  display: flex;
+  background-image: url(./images/Mobile/mozilla-logo.png);
+  background-repeat: no-repeat;
+}
+
+.partner-block-1 .partner-client-2 {
+  flex: 1;
+  display: flex;
+  background-image: url(./images/Mobile/NAVER-logo.png);
+  background-repeat: no-repeat;
+}
+
+.partner-block-1 .partner-client-3 {
+  flex: 1;
+  display: flex;
+  background-image: url(./images/Mobile/airbnb-logo-N.png);
+  background-repeat: no-repeat;
+}
+
+.partner-block-2 {
+  display: flex;
+  width: 100%;
+  height: 104px;
+  margin-top: 12px;
+  margin-left: 102px;
+  align-self: center;
+}
+
+.partner-block-2 .partner-client-1 {
+  flex: 1;
+  display: flex;
+  background-image: url(./images/Mobile/HPMK-logo.png);
+  background-repeat: no-repeat;
+  opacity: 0.7;
+}
+
+.partner-block-2 .partner-client-2 {
+  flex: 1;
+  display: flex;
+  background-image: url(./images/Mobile/NAVER-logo.png);
+  background-repeat: no-repeat;
+}
+
+/* The Footer section Sytling */
+
+.footer-container {
+  display: flex;
+  width: 100%;
+}
+
+.footer-logo {
+  color: rgba(236, 82, 66, 1);
+  font-size: 1rem;
+  font-family: 'cocogose', sans-serif;
+  width: 200;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-left: 70px;
+  text-align: center;
+}
+
+.copyright {
+  font-family: 'cocogose', sans-serif;
+  font-size: 11px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-left: 35px;
+  text-align: center;
+  margin-right: 40px;
+  color: rgba(60, 63, 69, 1);
 }
