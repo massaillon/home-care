@@ -374,7 +374,7 @@ body {
 /* To Make the CHEST background style */
 
 .speaker-stack-picture-backdrop {
-  background: repeating-conic-gradient(#fff 0deg 90deg, #000 0 180deg) 0 0/20% 20%;
+  background: repeating-conic-gradient(#fff 0deg 90deg, #e68844 0 180deg) 0 0/20% 20%;
   margin: -40px;
   padding: 10px;
   height: min(20vw, 50px);
@@ -751,5 +751,35 @@ body {
     padding: 5px;
     margin-left: 0;
     margin-right: 0;
+  }
+
+  /* Our Satisfied customer section */
+
+  .featured-speaker-container {
+    padding-bottom: 50px;
+  }
+
+  .featured-speaker-container .section-title {
+    margin-top: 50px;
+  }
+
+  .featured-speaker-stack-container {
+    width: 100%;
+    align-items: normal;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+
+  .featured-speaker-stack-container-1,
+  .featured-speaker-stack-container-2 {
+    display: flex;
+  }
+
+  .featured-speaker-stack-description {
+    width: 400px;
+  }
+
+  .speaker-stack-picture-backdrop {
+    background: repeating-conic-gradient(#fff 0deg 90deg, #e68844 0 180deg) 0 0/20% 20%;
   }
 }
