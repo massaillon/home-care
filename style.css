@@ -444,6 +444,7 @@ body {
 
 .partner-container .section-title {
   color: white;
+  
 }
 
 .partner-container .section-title-underline-bar {
@@ -454,6 +455,12 @@ body {
   margin-top: 10px;
 }
 
+.partner-blocks {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
 .partner-block-1 {
   display: flex;
   width: 100%;
@@ -461,6 +468,7 @@ body {
   margin-top: 12px;
   margin-left: 30px;
   align-self: center;
+  margin-right: 13px;
 }
 
 .partner-block-1 .partner-client-1 {
@@ -650,6 +658,25 @@ body {
     border: 5px solid rgba(236, 82, 66, 1);
   }
 
+  nav .ask-quote {
+    background-color: white;
+    font-family: 'cocogoose', sans-serif;
+    color: rgba(236, 82, 66, 1);
+    cursor: pointer;
+  }
+
+  nav .ask-quote:hover {
+    background-color: rgba(236, 82, 66, 1);
+    color: white;
+    border:5px solid rgba(241, 166, 24, 1);
+  }
+
+  nav .ask-quote:hover:hover {
+    scale: 1.2;
+    transition: all 500ms ease-in-out;
+  }
+
+
   .ask-quote a {
     font-size: 13px;
     text-decoration: none;
@@ -782,4 +809,24 @@ body {
   .speaker-stack-picture-backdrop {
     background: repeating-conic-gradient(#fff 0deg 90deg, #e68844 0 180deg) 0 0/20% 20%;
   }
+
+  /* Our Partner section */
+
+.partner-blocks {
+display: flex;
+flex-direction: row;
+margin-top: 25px;
+margin-bottom: 25px;
+margin-left: 100px;
+}
+
+.partner-block-2 {
+  margin-left: 0px;
+  width: 900px;
+}
+
+.partner-container .section-title {
+  opacity: .5;
+}
+
 }
