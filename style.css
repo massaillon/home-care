@@ -167,6 +167,7 @@ body {
   max-width: 900px;
   align-self: center;
   margin-left: 15px;
+  z-index: 9;
 }
 
 .headline-paragraph-container {
@@ -226,6 +227,15 @@ body {
   align-self: center;
   background-color: rgba(236, 82, 66, 1);
   margin-top: -16px;
+}
+
+.solution-stack-container {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .solution-stack {
@@ -599,6 +609,7 @@ body {
     width: 100%;
     height: 75px;
     z-index: 15;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
   }
 
   .logo {
@@ -681,8 +692,64 @@ body {
     top: 400px;
   }
 
+  .cercle-bg-vector:hover {
+    scale: 1.2;
+  }
+
   .dollar-bg-vector {
     left: 380px;
     top: 560px;
+  }
+
+  .dollar-bg-vector:hover {
+    scale: 1.2;
+  }
+
+  /* Main section containing the ,Solutions and the featured Speakers */
+
+  /* Our Solutions Section */
+
+  .section-title {
+    margin-top: 50px;
+  }
+
+  .solution-stack-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 30px;
+  }
+
+  .solution-stack {
+    flex-direction: column;
+    align-items: center;
+    height: 220px;
+    width: 200px;
+    padding-bottom: 16px;
+  }
+
+  .stack-icon-1,
+  .stack-icon-2,
+  .stack-icon-3,
+  .stack-icon-4 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 0;
+  }
+
+  .stack-title {
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .stack-intro-text {
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
