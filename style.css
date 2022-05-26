@@ -444,7 +444,6 @@ body {
 
 .partner-container .section-title {
   color: white;
-  
 }
 
 .partner-container .section-title-underline-bar {
@@ -668,14 +667,13 @@ body {
   nav .ask-quote:hover {
     background-color: rgba(236, 82, 66, 1);
     color: white;
-    border:5px solid rgba(241, 166, 24, 1);
+    border: 5px solid rgba(241, 166, 24, 1);
   }
 
   nav .ask-quote:hover:hover {
     scale: 1.2;
     transition: all 500ms ease-in-out;
   }
-
 
   .ask-quote a {
     font-size: 13px;
@@ -812,21 +810,20 @@ body {
 
   /* Our Partner section */
 
-.partner-blocks {
-display: flex;
-flex-direction: row;
-margin-top: 25px;
-margin-bottom: 25px;
-margin-left: 100px;
-}
+  .partner-blocks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 100px;
+  }
 
-.partner-block-2 {
-  margin-left: 0px;
-  width: 900px;
-}
+  .partner-block-2 {
+    margin-left: 0;
+    width: 900px;
+  }
 
-.partner-container .section-title {
-  opacity: .5;
-}
-
+  .partner-container .section-title {
+    opacity: 0.5;
+  }
 }

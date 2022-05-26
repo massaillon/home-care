@@ -15,6 +15,12 @@ body {
   height: 100vh;
 }
 
+/* Top bar section styling */
+
+.top-bar {
+  display: none;
+}
+
 /* Header Section styling */
 
 .header-image {
@@ -133,8 +139,8 @@ body {
   padding-top: 111px;
   background-repeat: no-repeat;
   position: absolute;
-  left: 302px;
-  top: 480px;
+  top: 544px;
+  left: 0;
 }
 
 /* Headline Section styling */
@@ -144,11 +150,11 @@ body {
   flex-direction: column;
   align-content: space-between;
   margin-top: 130px;
-  margin-bottom: 114px;
+  margin-bottom: -11px;
 }
 
 .headline-container h1 {
-  background-image: url(./images/Mobile/orange-background.png);
+  background-image: url(./images/Mobile/Red-Orange-bg.png);
   font-family: 'cocogoose', sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
@@ -165,17 +171,6 @@ body {
   z-index: 9;
 }
 
-.hammer-vector {
-  background-image: url(images/Mobile/vector-hammer-png.png);
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 167px;
-  height: 100px;
-  left: 306px;
-  top: 190px;
-  opacity: 0.75;
-}
-
 .headline-paragraph-container {
   display: flex;
   border: 2px solid white;
@@ -183,7 +178,7 @@ body {
   align-self: center;
   padding: 10px;
   width: 384px;
-  background-color: rgb(229, 229, 229);
+  background-color: #f9f9f9;
   z-index: 9;
 }
 
@@ -340,6 +335,7 @@ body {
 }
 
 /* Partner Section Styling */
+
 .partner-container {
   display: flex;
   flex-direction: column;
@@ -362,6 +358,12 @@ body {
   margin-top: 10px;
 }
 
+.partner-blocks {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
 .partner-block-1 {
   display: flex;
   width: 100%;
@@ -369,6 +371,7 @@ body {
   margin-top: 12px;
   margin-left: 30px;
   align-self: center;
+  margin-right: 13px;
 }
 
 .partner-block-1 .partner-client-1 {
@@ -444,4 +447,245 @@ body {
   text-align: center;
   margin-right: 40px;
   color: rgba(60, 63, 69, 1);
+}
+
+/* media Queries for desktop version */
+
+@media all and (min-width: 768px) {
+  /* Top bar section styling */
+
+  .top-bar {
+    display: flex;
+    background-color: rgba(60, 63, 69, 1);
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    padding-right: 100px;
+  }
+
+  .top-bar-element-container {
+    display: flex;
+    gap: 10px;
+    font-family: 'cocogose', sans-serif;
+  }
+
+  .top-bar-element-container a {
+    font-size: 13px;
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+  }
+
+  /* Header Section styling */
+
+  .home-header {
+    background-image: url(./images/Mobile/About-bg.png);
+    background-repeat: no-repeat;
+  }
+
+  .headline-container {
+    margin-top: 166px;
+  }
+
+  .headline-container h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .headline-paragraph-container {
+    width: 650px;
+    margin-top: 27px;
+    opacity: 1;
+  }
+
+  .headline-container h3 {
+    margin-top: 33px;
+    z-index: 15;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  /* Navigation Bar section styling */
+
+  .navbar {
+    display: flex;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    z-index: 15;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .logo {
+    background-image: url(./images/Mobile/orange-background.png);
+    display: flex;
+    text-decoration: none;
+    color: transparent;
+    font-family: 'cocogoose', sans-serif;
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    margin-right: -184px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    color: rgba(60, 63, 69, 0.8);
+    font-size: 13px;
+  }
+
+  /* Ask quote button */
+
+  .ask-quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    border: 5px solid rgba(236, 82, 66, 1);
+  }
+
+  nav .ask-quote {
+    background-color: white;
+    font-family: 'cocogoose', sans-serif;
+    color: rgba(236, 82, 66, 1);
+    cursor: pointer;
+  }
+
+  nav .ask-quote:hover {
+    background-color: rgba(236, 82, 66, 1);
+    color: white;
+    border: 5px solid rgba(241, 166, 24, 1);
+  }
+
+  nav .ask-quote:hover:hover {
+    scale: 1.2;
+    transition: all 500ms ease-in-out;
+  }
+
+  .ask-quote a {
+    font-size: 13px;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgba(236, 82, 66, 1);
+    font-family: 'cocogoose', sans-serif;
+  }
+
+  .ask-quote a:hover {
+    color: white;
+  }
+
+  /* Vector background */
+
+  .chest-bg-vector {
+    left: 1000px;
+    top: 158px;
+  }
+
+  .chest-bg-vector:hover {
+    scale: 1.2;
+  }
+
+  .C-bg-vector {
+    left: 51px;
+    top: 51px;
+  }
+
+  .C-bg-vector:hover {
+    scale: 1.2;
+  }
+
+  .Cross-bg-vector {
+    left: 302px;
+    top: 93px;
+  }
+
+  .Cross-bg-vector:hover {
+    scale: 1.2;
+  }
+
+  .cercle-bg-vector {
+    left: 878px;
+    top: 428px;
+  }
+
+  .cercle-bg-vector:hover {
+    scale: 1.2;
+  }
+
+  .dollar-bg-vector {
+    left: 300px;
+    top: 515px;
+  }
+
+  .dollar-bg-vector:hover {
+    scale: 1.2;
+  }
+
+  /* Main section containing the ,About Us and the Project done */
+
+  /* About us Styling */
+
+  .About-us-container p {
+    width: 500px;
+  }
+
+  /* project done styling */
+  .project-done-container p {
+    width: 500px;
+  }
+
+  .project-done {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .project-done-1 {
+    margin-top: 0;
+  }
+
+  .project-done-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  /* Our Partner section */
+
+  .partner-blocks {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 100px;
+  }
+
+  .partner-block-2 {
+    margin-left: 0;
+    width: 900px;
+  }
+
+  .partner-container .section-title {
+    opacity: 0.5;
+  }
 }
