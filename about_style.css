@@ -727,6 +727,10 @@ body {
 
   /* Our Partner section */
 
+  .partner-container {
+    display: none;
+  }
+
   .partner-blocks {
     display: flex;
     flex-direction: row;
@@ -742,5 +746,14 @@ body {
 
   .partner-container .section-title {
     opacity: 0.5;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .footer-container {
+    background-color: #272a31;
+    color: white;
   }
 }

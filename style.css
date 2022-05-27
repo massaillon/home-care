@@ -601,7 +601,7 @@ body {
   color: rgba(60, 63, 69, 1);
 }
 
-/* Special querie for Mobile version */
+/* Special Media querie for Mobile version */
 
 @media all and (max-width: 767px) {
   .hide {
@@ -914,5 +914,18 @@ body {
 
   .partner-container .section-title {
     opacity: 0.5;
+  }
+
+  .footer-logo {
+    color: #e68844;
+  }
+
+  .copyright {
+    color: white;
+  }
+
+  .footer-container {
+    background-color: #272a31;
+    color: white;
   }
 }
