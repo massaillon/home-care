@@ -40,11 +40,10 @@ body {
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 20px;
-  margin-top: 10px;
-  position: fixed;
+  position: absolute;
+  width: 100%;
+  z-index: 99;
+  height: 100%;
 }
 
 .logo {
@@ -53,7 +52,10 @@ body {
 
 .hamburger {
   display: block;
-  margin-right: 20px;
+  margin-left: 25px;
+  position: absolute;
+  z-index: 99;
+  margin-top: 10px;
 }
 
 .bar {
@@ -65,13 +67,47 @@ body {
   background-color: #272a31;
 }
 
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: white;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: white;
+}
+
+.hide {
+  display: none !important;
+}
+
 .nav-menu {
-  display: none;
-  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgba(236, 82, 66, 1);
+  backdrop-filter: blur(8px);
+  width: 100%;
+  transition: 0.3s;
+  min-height: 650px;
+  list-style-type: none;
+  padding: 65px;
+}
+
+.nav-link {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  left: 53px;
+  margin-top: 106px;
+  text-decoration: none;
 }
 
 .ask-quote {
-  display: none;
+  display: none !important;
 }
 
 /* Vector background */
@@ -537,12 +573,19 @@ body {
   }
 
   .nav-menu {
-    display: flex;
-    justify-content: space-between;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
     gap: 40px;
     list-style: none;
     font-family: "Poppins", sans-serif;
+    margin-top: 0;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: transparent;
     margin-right: -184px;
+    backdrop-filter: blur(0);
   }
 
   .nav-link {
@@ -551,10 +594,22 @@ body {
     font-size: 13px;
   }
 
+  .nav-link:hover {
+    color: rgba(236, 82, 66, 1);
+  }
+
+  .nav-link:active {
+    color: rgba(236, 82, 66, 1);
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
   /* Ask quote button */
 
   .ask-quote {
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     width: 150px;
