@@ -1,600 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Portfolio of Massaillon Home page</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/8ea4cd9e84.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home repair</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/8ea4cd9e84.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <header id="header-container">
-    <nav class="navbar">
-        <a id="logo-container" href="#header-container">Bonjour</a>
-        <ul class="nav-menu hide">
-            <li class="nav-item">
-                <a class="nav-link" href="#main-home">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#About-Me">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#form">Contact</a>
-            </li>
-            <li class="underline-bar-navmenu"></li>
-        </ul>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <!-- The Top bar for social network and logout section -->
+    <div class="top-bar">
+        <div class="top-bar-element-container">
+        <div class="facebook">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
-            
-    </nav>
-  </header>
-  <div id="Header-background">
-      <div class="ellipse-rectangle-6"></div>
-      <div class="ellipse-big-half-cercle-top"></div>
-      <div class="ellipse-Rectangle-7"></div>
-      <div class="ellipse-big-cercle-standby"></div>
-      <div class="ellipse-Rectangle-4"></div>
-      <div class="ellipse-big-half-donut-active"></div>
-
-      <section class="headline">
-          <div class="intro-container">
-            <div class="headline-intro">
-                <h1>I’m Massaillon <br>
-                    Glad to see you!</h1>
-            </div>
-              <div class="intro-desc-sumary">
-                  <p>I’m a software developer! I can help you build a product ,
-                      feature or website Look through some of my work and experience!
-                      If you like what you see and have a project you need coded,
-                      don’t hestiate to contact me. </p>
-              </div>
-
-              <div class="social-area">
-                <h4 class="social-network">LET’S CONNECT</h4>
-                <div class="social-icon">
-                  <ul>
-                      <li>
-                          <a href="#" class="twitter"><img
-                                  src="images/Twiter.svg" alt="Twitter social network"></a>
-                      </li>
-                      <li>
-                          <a href="#" class="linkedin"><img
-                                  src="images/Linkedin.svg" alt="Linkedin social network"></a>
-                      </li>
-                      <li>
-                          <a href="#" class="M"><img src="images/M.svg"
-                                  alt="M social network"></a>
-                      </li>
-                      <li>
-                          <a href="#" class="C"><img src="images/C.svg"
-                                  alt="Github social network for developers"></a>
-                      </li>
-                      <li>
-                          <a href="#" class="2f"><img src="images/2f.svg"
-                                  alt="Angelist social Network"></a>
-                      </li>
-                  </ul>
-                </div>
-              </div>
-          </div>
-      <div class="ellipse-small-half-cercle-bottom"></div>
-      <div class="ellipse-big-half-donut-standby"></div>
-      <div class="ellipse-Rectangle-5"></div>
-      <div class="ellipse-big-cercle-active"></div>
-      </section>
-
-
-  </div>
-
-  <!-- The HTML codes below are  for the works and About myself sections  Milestone 2-->
-
-  <main id="main-home">
-      <div class="portfolio-items">
-          <div class="slider-work-1"></div>
-          <div class="overview-container">
-          <h3 class="title-work-1">Tonic</h3>
-          <div class="detail-overview-work-1">
-              <div class="">CANOPY</div>
-              <div class="counter"></div>
-              <div>Back End Dev</div>
-              <div class="counter"></div>
-              <div>2015</div>
-          </div>
-          <div class="desc-text-work-1">
-              <p>A daily selection of privately personalized
-                  reads;
-                  no accounts or sign-ups required.</p>
-          </div>
-          <div class="button-work-1">
-              <ul>
-                  <li>
-                      <a class="button-html" href="#">html</a>
-                  </li>
-                  <li>
-                      <a class="button-css" href="#">css</a>
-                  </li>
-                  <li>
-                      <a class="button-js" href="#">javascript</a>
-                  </li>
-              </ul>
-          </div>
-      
-          <div>
-              <button type="button" id="seeProjBtn1" class="seeProjBtn1">See Project</button>
-          </div>
+        <div class="twitter">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="language-select">
+            <a href="#">English</a>
+        </div>
+        <div class="mypage">
+            <a href="#">My page</a>
+        </div>
+        <div class="logout">
+            <a href="#">Logout</a>
         </div>
     </div>
-          
-          <!--Popup windows code-->
+    </div>
+    <!-- Head section containing Logo,navigation menu,Hamburger button-->
+    <header class="home-header">
+        <div class="header-image">
+            
+        <!-- The logo and the menu section -->
+        <nav class="navbar">
+            <a class="logo" href="./index.html">Home Maintain .</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu hide">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Solutions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">contact Us</a>
+                </li>
+            </ul>
+            <!-- Ask quote button displayed on the navbar-->
+            <div>
+                <button type="button" id="button-ask-quote-A" class="ask-quote">Ask for a quote</button>
+            </div>
+        </nav>
 
-          <div id="myModal" class="modal hide">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h3 class="title-work">Tonic</h3>
-              <span class="close">&times;</span>
+        <!-- Vector background Top and middle -->
+        <div class="chest-bg-vector"></div>
+        <div class="C-bg-vector"></div>
+        <div class="Cross-bg-vector"></div>
+        <div class="0-bg-vector"></div>
+        <div class="cercle-bg-vector"></div>
+
+        <!-- Headline and introduction paragraph -->
+        <section class="headline-container">
+            <h1>Building construction<br>
+                repair and maintenance of premises</h1>
+                <div class="headline-paragraph-container">
+                <p>Our company can intervene in all trades
+                    or in separate trades according to the choices of the client
+                    or the project manager.</p>
+                </div>
+                    <h3>With us the assurance of a job well done</h3>
+
+                    <!-- Vector background bottom -->
+                    <div class="dollar-bg-vector"></div>
+                    <div class="Cross-bg-vector-bottom"></div>
+        </section>
+    </div>
+    </header>
+
+    <main>
+ <!-- Main section containing the ,Solutions and the featured Speakers-->
+
+<section class="solution-container">
+<h4 class="section-title">Our Solutions</h4>
+<div class="section-title-underline-bar"></div>
+<div class="solution-stack-container">
+<div class="solution-stack">
+    <div class="stack-icon-1"><img src="./images/Mobile/repair-toilet-vector-Mod.png" alt=" "></div>
+    <div class="stack-title">Home Plumbing</div>
+    <div class="stack-intro-text">
+        <p>Plumbing work is carried out by qualified professionals.</p>
+    </div>
+</div>
+<div class="solution-stack">
+    <div class="stack-icon-2"><img src="./images/Mobile/Plug-socket-mod.png" alt=" "></div>
+    <div class="stack-title">Home electric</div>
+    <div class="stack-intro-text">
+        <p>We carry out electrical installations as part of a renovation or construction.</p>
+    </div>
+</div>
+<div class="solution-stack">
+    <div class="stack-icon-3"><img src="./images/Mobile/construction-icon-mod.png" alt=" "></div>
+    <div class="stack-title">Construction</div>
+    <div class="stack-intro-text">
+        <p>Structural work related to underpinning,
+            extensions or elevations are our
+            daily</p>
+    </div>
+</div>
+<div class="solution-stack">
+    <div class="stack-icon-4"><img src="./images/Mobile/carpentry-icon-mod.png" alt=" "></div>
+    <div class="stack-title">Carpentry</div>
+    <div class="stack-intro-text">
+        <p>Your Needs are Our Expertise, indeed our carpenters 
+        make it a point of honor to create personalized works</p>
+    </div>
+</div>
+</div>
+<div>
+    <button type="button" id="button-ask-quote" class="button-ask-quote">Ask for a quote</button>
+</div>
+</section>
+<section class="featured-speaker-container">
+    <h4 class="section-title"> Satisfied Customer</h4>
+    <div class="section-title-underline-bar"></div>
+
+    <div class="featured-speaker-stack-container">
+        <div class="featured-speaker-stack-container-1">
+
+    <div class="featured-speaker-stack">
+        <div class="featured-speaker-stack-picture-container">
+            <div class="speaker-stack-picture">
+            <div class="speaker-stack-picture-backdrop"></div>
+            <img src="./images/Mobile/satisfied-customer.png" alt=" ">
+        </div>
+        </div>
+        <div class="featured-speaker-stack-text-container">
+            <div class="featured-speaker-stack-text-title">Aicha Kamagate</div>
+            <div class="featured-speaker-introduction">
+                <p>Lives in Accra,Labadi</p> 
             </div>
-            <div class="detail-overview-work">
-                <div class="">CANOPY</div>
-                <div class="counter"></div>
-                <div>Back End Dev</div>
-                <div class="counter"></div>
-                <div>2015</div>
-            </div>
-            <div class="slider-modal-1"></div>
-            <div class="desc-modal-encaps">
-            <div class="desc-text-modal-1">
+            <div class="section-title-underline-bar"></div>
+            <div class="featured-speaker-stack-description">
                 <p>Lorem Ipsum is simply dummy text of the printing and 
                     typesetting industry. Lorem Ipsum has been the industry's standard
-                     dummy text ever since the 1500s, when an unknown printer took a 
-                     galley of type and scrambled it to make a type specimen book. It 
-                     has survived not only five centuries, but also the leap into electronic
-                      typesetting, remaining essent.</p>
-            </div> 
-            <div class="desc-button-encaps"> 
-            <div class="button-work">
-                <ul>
-                    <li>
-                        <a class="button-html" href="#">html</a>
-                    </li>
-                    <li>
-                        <a class="button-css" href="#">css</a>
-                    </li>
-                    <li>
-                        <a class="button-js" href="#">javascript</a>
-                    </li>
-                </ul>
+                     dummy text ever since the 1500s</p>
             </div>
-            <div class="modal-see-button">
-            
-                <button type="button" id="seeLiveBtn" >See Live
-                    <i class="seeLiveIcon"></i>
-                </button>
-            
-                <button type="button" id="seeSourceBtn" >See Source
-                    <i class="seeSourceIcon"></i>
-                </button>
         </div>
     </div>
-    </div>
-          </div>
-          </div>
 
-      <div class="portfolio-items">
-          <div class="slider-work-2"></div>
-          <div class="overview-container-2">
-          <h3 class="title-work-1">Multi-Post
-              Stories</h3>
-          <div class="detail-overview-work-1">
-              <div class="">CANOPY</div>
-              <div class="counter"></div>
-              <div>Back End Dev</div>
-              <div class="counter"></div>
-              <div>2015</div>
-          </div>
-          <div class="desc-text-work-1">
-              <p>A daily selection of privately personalized
-                  reads;
-                  no accounts or sign-ups required.</p>
-          </div>
-          <div class="button-work-1">
-              <ul>
-                  <li>
-                      <a class="button-html" href="#">html</a>
-                  </li>
-                  <li>
-                      <a class="button-css" href="#">css</a>
-                  </li>
-                  <li>
-                      <a class="button-js" href="#">javascript</a>
-                  </li>
-              </ul>
-          </div>
-          <div>
-            <button type="button" id="seeProjBtn2" class="seeProjBtn2">See Project</button>
+    <div class="featured-speaker-stack">
+        <div class="featured-speaker-stack-picture-container">
+            <div class="speaker-stack-picture">
+            <div class="speaker-stack-picture-backdrop"></div>
+            <img src="./images/Mobile/satisfied-customer-2.png" alt=" ">
         </div>
-      </div>
-      </div>
-
-
-      <div id="myModal2" class="modal2 hide">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h3 class="title-work">Multi-Post Stories</h3>
-          <span class="close2">&times;</span>
         </div>
-        <div class="detail-overview-work">
-            <div class="">CANOPY</div>
-            <div class="counter"></div>
-            <div>Back End Dev</div>
-            <div class="counter"></div>
-            <div>2015</div>
-        </div>
-        <div class="slider-modal-2"></div>
-        <div class="desc-modal-encaps">
-        <div class="desc-text-modal-2">
-            <p>Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry's standard
-                 dummy text ever since the 1500s, when an unknown printer took a 
-                 galley of type and scrambled it to make a type specimen book. It 
-                 has survived not only five centuries, but also the leap into electronic
-                  typesetting, remaining essent.</p>
-        </div>  
-        <div class="desc-button-encaps"> 
-            <div class="button-work">
-                <ul>
-                    <li>
-                        <a class="button-html" href="#">html</a>
-                    </li>
-                    <li>
-                        <a class="button-css" href="#">css</a>
-                    </li>
-                    <li>
-                        <a class="button-js" href="#">javascript</a>
-                    </li>
-                </ul>
+        <div class="featured-speaker-stack-text-container">
+            <div class="featured-speaker-stack-text-title">Mathieu Blanchard</div>
+            <div class="featured-speaker-introduction">
+                <p>Lives in Abidjan,Cocody</p> 
             </div>
-            <div class="modal-see-button">
-            <div>
-                <button type="button" id="seeLiveBtn2" >See Live
-                    <i class="seeLiveIcon"></i>
-                </button>
-            </div>
-            <div>
-                <button type="button" id="seeSourceBtn2" >See Source
-                    <i class="seeSourceIcon"></i>
-                </button>
+            <div class="section-title-underline-bar"></div>
+            <div class="featured-speaker-stack-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's standard
+                     dummy text ever since the 1500s</p>
             </div>
         </div>
     </div>
 </div>
-      
-      </div>
-  </div>
 
-      <div class="portfolio-items">
+<div class="featured-speaker-stack-container-2 hide">
 
-          <div class="slider-work-3"></div>
-          <div class="overview-container">
-          <h3 class="title-work-1">Tonic</h3>
-          <div class="detail-overview-work-1">
-              <div class="">CANOPY</div>
-              <div class="counter"></div>
-              <div>Back End Dev</div>
-              <div class="counter"></div>
-              <div>2015</div>
-          </div>
-          <div class="desc-text-work-1">
-              <p>A daily selection of privately personalized
-                  reads;
-                  no accounts or sign-ups required.</p>
-          </div>
-          <div class="button-work-1">
-              <ul>
-                  <li>
-                      <a class="button-html" href="#">html</a>
-                  </li>
-                  <li>
-                      <a class="button-css" href="#">css</a>
-                  </li>
-                  <li>
-                      <a class="button-js" href="#">javascript</a>
-                  </li>
-              </ul>
-          </div>
-          <div>
-            <button type="button" id="seeProjBtn3" class="seeProjBtn3">See Project</button>
+    <div class="featured-speaker-stack">
+        <div class="featured-speaker-stack-picture-container">
+            <div class="speaker-stack-picture">
+            <div class="speaker-stack-picture-backdrop"></div>
+            <img src="./images/Mobile/satisfied-customer-3.png" alt=" ">
         </div>
-      </div>
-      </div>
-
-
-      <div id="myModal3" class="modal3 hide">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h3 class="title-work">Tonic</h3>
-          <span class="close3">&times;</span>
         </div>
-        <div class="detail-overview-work">
-            <div class="">CANOPY</div>
-            <div class="counter"></div>
-            <div>Back End Dev</div>
-            <div class="counter"></div>
-            <div>2015</div>
-        </div>
-        <div class="slider-modal-3"></div>
-        <div class="desc-modal-encaps">
-        <div class="desc-text-modal-3">
-            <p>Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry's standard
-                 dummy text ever since the 1500s, when an unknown printer took a 
-                 galley of type and scrambled it to make a type specimen book. It 
-                 has survived not only five centuries, but also the leap into electronic
-                  typesetting, remaining essent.</p>
-        </div>  
-        <div class="desc-button-encaps"> 
-            <div class="button-work">
-                <ul>
-                    <li>
-                        <a class="button-html" href="#">html</a>
-                    </li>
-                    <li>
-                        <a class="button-css" href="#">css</a>
-                    </li>
-                    <li>
-                        <a class="button-js" href="#">javascript</a>
-                    </li>
-                </ul>
+        <div class="featured-speaker-stack-text-container">
+            <div class="featured-speaker-stack-text-title">John Seithn</div>
+            <div class="featured-speaker-introduction">
+                <p>Lives in Abidjan,Plateau</p> 
             </div>
-            <div class="modal-see-button">
-            <div>
-                <button type="button" id="seeLiveBtn3" >See Live
-                    <i class="seeLiveIcon"></i>
-                </button>
+            <div class="section-title-underline-bar"></div>
+            <div class="featured-speaker-stack-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's standard
+                     dummy text ever since the 1500s</p>
             </div>
-            <div>
-                <button type="button" id="seeSourceBtn3" >See Source
-                    <i class="seeSourceIcon"></i>
-                </button>
+        </div>
+    </div>
+
+    <div class="featured-speaker-stack">
+        <div class="featured-speaker-stack-picture-container">
+            <div class="speaker-stack-picture">
+            <div class="speaker-stack-picture-backdrop"></div>
+            <img src="./images/Mobile/satisfied-customer-4.png" alt=" ">
+        </div>
+        </div>
+        <div class="featured-speaker-stack-text-container">
+            <div class="featured-speaker-stack-text-title">Boris Stween</div>
+            <div class="featured-speaker-introduction">
+                <p>Lives in Conakry,Kaloum</p> 
+            </div>
+            <div class="section-title-underline-bar"></div>
+            <div class="featured-speaker-stack-description">
+                <p>Lorem Ipsum is simply dummy text of the printing and 
+                    typesetting industry. Lorem Ipsum has been the industry's standard
+                     dummy text ever since the 1500s</p>
             </div>
         </div>
     </div>
 </div>
-      
-      </div>
-  </div>
+<!-- Featured Speaker Button -->
 
-      <div class="portfolio-items">
+<div class="featured-speaker-more-button">
+    <button id="featured-speaker-more-button" class="more-button"  type="button">MORE</button>
+    <i class="fa-solid fa-angle-down"></i>
+</div>
+</div>
+</section>
 
-          <div class="slider-work-4"></div>
-          <div class="overview-container-2">
-          <h3 class="title-work-1">Multi-Post
-              Stories</h3>
-          <div class="detail-overview-work-1">
-              <div class="">CANOPY</div>
-              <div class="counter"></div>
-              <div>Back End Dev</div>
-              <div class="counter"></div>
-              <div>2015</div>
-          </div>
-          <div class="desc-text-work-1">
-              <p>A daily selection of privately personalized
-                  reads;
-                  no accounts or sign-ups required.</p>
-          </div>
-          <div class="button-work-1">
-              <ul>
-                  <li>
-                      <a class="button-html" href="#">html</a>
-                  </li>
-                  <li>
-                      <a class="button-css" href="#">css</a>
-                  </li>
-                  <li>
-                      <a class="button-js" href="#">javascript</a>
-                  </li>
-              </ul>
-          </div>
-          <div>
-            <button type="button" id="seeProjBtn4" class="seeProjBtn4">See Project</button>
-        </div>
-      </div>
-      </div>
+<!-- The Partner section -->
 
-      <div id="myModal4" class="modal4 hide">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h3 class="title-work">Post Stories</h3>
-          <span class="close4">&times;</span>
-        </div>
-        <div class="detail-overview-work">
-            <div class="">CANOPY</div>
-            <div class="counter"></div>
-            <div>Back End Dev</div>
-            <div class="counter"></div>
-            <div>2015</div>
-        </div>
-        <div class="slider-modal-4"></div>
-        <div class="desc-modal-encaps">
-        <div class="desc-text-modal-4">
-            <p>Lorem Ipsum is simply dummy text of the printing and 
-                typesetting industry. Lorem Ipsum has been the industry's standard
-                 dummy text ever since the 1500s, when an unknown printer took a 
-                 galley of type and scrambled it to make a type specimen book. It 
-                 has survived not only five centuries, but also the leap into electronic
-                  typesetting, remaining essent.</p>
-        </div>  
-        <div class="desc-button-encaps"> 
-            <div class="button-work">
-                <ul>
-                    <li>
-                        <a class="button-html" href="#">html</a>
-                    </li>
-                    <li>
-                        <a class="button-css" href="#">css</a>
-                    </li>
-                    <li>
-                        <a class="button-js" href="#">javascript</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="modal-see-button">
-            <div>
-                <button type="button" id="seeLiveBtn4" >See Live
-                    <i class="seeLiveIcon"></i>
-                </button>
-            </div>
-            <div>
-                <button type="button" id="seeSourceBtn4" >See Source
-                    <i class="seeSourceIcon"></i>
-                </button>
-            </div>
-        </div>
+<section class="partner-container">
+    <h4 class="section-title">Our Partners</h4>
+    <div class="section-title-underline-bar"></div>
+<div class="partner-blocks">
+        <div class="partner-block-1">
+        <div class="partner-client-1"></div>
+        <div class="partner-client-2"></div>
+        <div class="partner-client-3"></div>
     </div>
+    <div class="partner-block-2">
+        <div class="partner-client-1"></div>
+        <div class="partner-client-2"></div>
     </div>
-      </div>
-      </div>
-  </main>
+</div>
+    
+</section>
+    </main>
 
-  <section>
-      <div id="About-Me">
-      <div class="container-about">
-          <div class="About-Myself">
-              <h2>About
-                  Myself</h2>
-          </div>
-          <div class="intro-desc-sumary">
-              <p>Hello I’m a software developer!
-                  I can help you build a product
-                  , feature or website Look through some
-                  of my work and experience!
-                  If you like what you see and have a project
-                  you need coded, don’t hestiate to contact me.</p>
-          </div>
+    <!-- The Footer section -->
 
-
-          <div class="social-area">
-              <h3 class="social-network">LET’S CONNECT</h3>
-              <div class="social-icon">
-                  <ul>
-                      <li>
-                          <a href="#" class="twitter"><img
-                                  src="images/Twiter.svg" alt="Twitter social network"></a>
-                      </li>
-                      <li>
-                          <a href="#" class="linkedin"><img
-                                  src="images/Linkedin.svg" alt="Linkedin social network"></a>
-                      </li>
-                      <li>
-                          <a href="#" class="M"><img src="images/M.svg"
-                                  alt="M social network"></a>
-                      </li>
-                      <li>
-                          <a href="#" class="C"><img src="images/C.svg"
-                                  alt="Github social network for developers"></a>
-                      </li>
-                      <li>
-                          <a href="#" class="2f"><img src="images/2f.svg"
-                                  alt="Angelist social Network"></a>
-                      </li>
-                  </ul>
-              </div>
-
-          </div>
-          <div class="view-resume">
-              <button type="button">Get my resume</button>
-          </div>
-      </div>
-
-      <div class="My-prog-lang">
-      <div class="lang-select">
-          <div class="language-label">Languages</div>
-          <div class="lang-arrow-button"><a href="#"><img alt="drop down options"
-                      src="images/icons8-expand-arrow-30.png"></a></div>
-      </div>
-
-      <div class="lang-box-container">
-
-          <div class="lang-box">
-              <div class="lang-logo-js"></div>
-              <div class="lang-label">javascript</div>
-          </div>
-
-          <div class="lang-box">
-              <div class="lang-logo-html"></div>
-              <div class="lang-label">HTML</div>
-          </div>
-
-          <div class="lang-box">
-              <div class="lang-logo-css"></div>
-              <div class="lang-label">CSS</div>
-          </div>
-
-      </div>
-      <div class="framework-select">
-          <div class="framework-label">Framework</div>
-          <div class="frameW-arrow-button"><a href="#"><img alt="detail for framework expasion"
-                      src="images/icons8-right-arrow-32.png"></a></div>
-      </div>
-
-      <div class="skills-select">
-          <div class="skills-label">Skills</div>
-          <div class="skills-arrow-button"><a href="#"><img alt="detail for skills expansion"
-                      src="images/icons8-right-arrow-32.png"></a></div>
-      </div>
-  </div>
-  </div>
-
-  </section>
-  
-  <!--The HTML codes below are  for the contact form's section  Milestone 3-->
-  <section id="form">
-      <div class="form-container">
-          <div class="top-half-circle contact-form-imgs"></div>
-          <div class="top-rectangle contact-form-imgs"></div>
-          <div class="top-circle contact-form-imgs"></div>
-          <div class="bottom-rectangle contact-form-imgs"></div>
-          <div class="bottom-circle contact-form-imgs"></div>
-          <div class="left-rectangle contact-form-imgs"></div>
-          <div class="left-cercle contact-form-imgs"></div>
-          <div class="right-cercle contact-form-imgs"></div>
-          <h2>Contact me</h2>
-          <p>If you have an application you are interested in developing,
-              a feature that you need built or a project that needs coding.
-              I’d love to help with it </p>
-
-          <form action="https://formspree.io/f/xdobpeyw" id="form-Cont" method="post">
-              <ul>
-                  <li>
-                      <input id="name" class="form-element" type="text" placeholder="Please enter your name" name="user_name" value=""
-                          maxlength="100" required>
-                  </li>
-
-                  <li>
-                      <input type="email" id="email" class="form-element" name="user_email" required placeholder="Please enter your email">
-
-                  </li>
-                  <li>
-                      <textarea id="message" class="form-element" name="user_message" placeholder="Write your message here"
-                          maxlength="500" required></textarea>
-                  </li>
-
-                  <!-- Below is the error message to be displayed when the email input is not valid-->
-
-                  <li class="error-message hide">Please enter your email in lowercase</li>
-                  <li>
-                      <button type="submit">Get In Touch</button>
-                  </li>
-              </ul>
-              <div class="underline-bar-bottom"></div>
-          </form>
-      </div>
-  </section>
-  <script src="script.js"></script>
+<footer class="footer-container">
+<div class="footer-logo">Home Maintain .</div>
+<div class="copyright">Copyright Massaillon Silue @2022 Microverse program module 1 Capstone</div>
+</footer>
+<script src="./script.js"></script>
 </body>
-
 </html>

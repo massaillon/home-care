@@ -1,6 +1,7 @@
 ### Project Name
 
-  # Portfolio: validate contact form milestone 10 final 
+  # capstone project 1: Home Construction website 
+  
 
 ## Built With
 
@@ -11,11 +12,11 @@
 
 ## Getting Started  
 
-  This project aims at saving the form data in the local storage of the browser. That way when the user reloads the page the data they filled out in the form will be preserved.
+  This project aims at building an online website for a Home care and repair 
 
   Please follow the steps below for getting started and editing the files from your local machine.
 
-   Prerequisites
+   # Prerequisites
 
      - You need to have the visual Code or some other code editors installed on your local machine
 
@@ -57,49 +58,50 @@
     
 ## Usage
 
-    In the final milestone of our portfolio website, we will:
+    In the capstone project 1, we will:
 
-    - We will implement the following interactions:
+    - Implement the following interactions:
         
-        When the user changes the content of any input field, the data is saved to the local storage.
+We will build only these 2 pages:
 
-        When the user loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
+    The home page.
+    The about page.
 
-    - We will use the following data model:
-        You must create a single JavaScript object with all the data from the entire form and save it in local storage. Do not create one local storage entry per input field.
+Each of these pages will have versions for 2 different screen sizes:
+
+    Mobile: up to 768px wide.
+    Desktop: 768px or wider.
+
+Interactions
+
+    Links
+        The home page should have a link in the menu to the about page.
+        The logo in the header links to the home page.
+    Mobile menu
+        When the user clicks (or taps) the hamburger button on the header, the mobile menu appears over the page.
+        There are no guidelines for the mobile menu in the docs, but you should implement it so it is consistent with the design (colors, typography, spacings, etc.).
+        The mobile menu should have a close (X) button that closes the menu.
+
+    Dynamic page
+
+        The section "Featured speakers" should be created dynamically in JavaScript.
+        You should use a JavaScript variable with the data about the speakers and use it when the page loads to create the HTML for this section dynamically.
 
 
 
-👤 Author
+## 👤 Author
 
     GitHub: @massaillon
     LinkedIn: Massaillon Silue
     Twitter: Massaillon Silue
 
-    **collaborator
 
-    ## Author
-👤 **Afolabi Akorede**
+## Link to the Live website
+   
+    https://massaillon.github.io/home-care/
+     
 
-- GitHub: [@brainconnect93](https://github.com/brainconnect93)
-- Twitter: [@brainconnect0](https://twitter.com/brainconnect0)
-- LinkedIn: [Afolabi Akorede](https://linkedin.com/in/brainconnect93)
-
-
-      
- ##collaborator
- 
-👤 **Afolabi Akorede**
-
-- GitHub: [@brainconnect93](https://github.com/brainconnect93)
-- Twitter: [@brainconnect0](https://twitter.com/brainconnect0)
-- LinkedIn: [Afolabi Akorede](https://linkedin.com/in/brainconnect93)
-
-Link to the Live website
-
-     https://massaillon.github.io/setup-and-mobile-version-skeleton/
-
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
