@@ -19,3 +19,22 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.add('hide');
   hamburger.toggle('bar active');
 }));
+
+/* Dynamic Feature speaker */
+/* Constants declarations for Dynamic Feature speaker */
+const more = document.querySelector('.featured-speaker-more-button');
+const dynamicSpeaker = document.querySelector('.featured-speaker-stack-container-2');
+
+/* Function for making dynamic the feature section */
+
+function moreFeature() {
+  /* Open the the remaining featured speaker on click */
+  if (dynamicSpeaker.classList.contains('hide')) {
+    dynamicSpeaker.classList.remove('hide');
+  } else {
+    dynamicSpeaker.classList.add('hide');
+  }
+}
+/* Add an event Listener for the action to be performed */
+
+more.addEventListener('click', moreFeature);

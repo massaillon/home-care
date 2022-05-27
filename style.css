@@ -82,13 +82,9 @@ body {
   background-color: white;
 }
 
-.hide {
-  display: none !important;
-}
-
 .nav-menu {
   flex-direction: column;
-  background-color: rgba(236, 82, 66, 1);
+  background-color: rgba(236, 82, 66, 0.8);
   backdrop-filter: blur(8px);
   width: 100%;
   transition: 0.3s;
@@ -406,6 +402,31 @@ body {
   z-index: 9;
 }
 
+/* Featured speaker Button */
+
+.featured-speaker-more-button {
+  display: flex;
+  border: 1px solid rgb(236, 82, 66);
+  width: 380px;
+  height: 53px;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 32px;
+  gap: 12px;
+  color: rgb(236, 82, 66);
+  cursor: pointer;
+}
+
+#featured-speaker-more-button {
+  background-color: transparent;
+  font-family: 'cocogose', sans-serif;
+  font-size: 13px;
+  border: none;
+  color: #272a31;
+  cursor: pointer;
+}
+
 /* To Make the CHEST background style */
 
 .speaker-stack-picture-backdrop {
@@ -578,6 +599,14 @@ body {
   text-align: center;
   margin-right: 40px;
   color: rgba(60, 63, 69, 1);
+}
+
+/* Special querie for Mobile version */
+
+@media all and (max-width: 767px) {
+  .hide {
+    display: none !important;
+  }
 }
 
 /* media Queries for desktop version */
@@ -860,6 +889,12 @@ body {
 
   .speaker-stack-picture-backdrop {
     background: repeating-conic-gradient(#fff 0deg 90deg, #e68844 0 180deg) 0 0/20% 20%;
+  }
+
+  /* Featured speaker Button */
+
+  .featured-speaker-more-button {
+    display: none;
   }
 
   /* Our Partner section */
