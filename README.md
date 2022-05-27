@@ -1,6 +1,6 @@
 ### Project Name
 
-  # capstone project 1: Home Repair website 
+  # capstone project 1: Home Construction website 
   
 
 ## Built With
