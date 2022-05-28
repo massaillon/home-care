@@ -188,6 +188,7 @@ body {
   background-image: url(./images/Mobile/orange-background.png);
   font-family: 'cocogoose', sans-serif;
   font-size: 2rem;
+  line-height: 1.5;
   text-transform: uppercase;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
@@ -650,6 +651,7 @@ body {
 
   .headline-container h1 {
     font-size: 3rem;
+    line-height: 1.5;
   }
 
   .headline-paragraph-container {
