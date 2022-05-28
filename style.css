@@ -164,6 +164,7 @@ body {
 }
 
 .dollar-bg-vector {
+  display: none;
   background-image: url(./images/Mobile/dollar-bg-vector.png);
   width: 92.67px;
   transform: rotate(189.86deg);
@@ -647,6 +648,7 @@ body {
 
   .headline-container {
     margin-top: 195px;
+    margin-bottom: 65px;
   }
 
   .headline-container h1 {
@@ -807,6 +809,7 @@ body {
   }
 
   .dollar-bg-vector {
+    display: none;
     left: 380px;
     top: 560px;
   }
